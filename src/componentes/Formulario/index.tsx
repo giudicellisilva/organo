@@ -21,6 +21,7 @@ const Formulario = ({aoColaboradorCadastrado, cadastrarTime, times} : Formulario
     const [cargo, setCargo] = useState("");
     const [imagem, setImagem] = useState("");
     const [time, setTime] = useState("");
+    const [data, setData] = useState("")
 
     const [nomeTime, setNomeTime] = useState("");
     const [cor, setCor] = useState("");
@@ -32,12 +33,14 @@ const Formulario = ({aoColaboradorCadastrado, cadastrarTime, times} : Formulario
             nome,
             cargo,
             imagem: imagem === "" ? "https://giudicellisilva.github.io/GiudicelliElias.Dev/imagens/user.png" : imagem ,
-            time
+            time,
+            data
         })
         setNome("");
         setCargo("");
         setImagem("");
         setTime("");
+        setData("");
     }
 
     const aoSalvarTime = (evento: React.FormEvent<HTMLFormElement>) =>{
@@ -55,6 +58,7 @@ const Formulario = ({aoColaboradorCadastrado, cadastrarTime, times} : Formulario
                 <Campo obrigatorio label="Nome" placeholder="Digite seu nome" valor={nome} aoAlterado={valor => setNome(valor)} />
                 <Campo  label="Cargo" placeholder="Digite seu cargo" valor={cargo} aoAlterado={valor => setCargo(valor)} />
                 <Campo label="Imagem" placeholder="Informe o endereço da imagem" valor={imagem} aoAlterado={valor => setImagem(valor)} />
+                <Campo obrigatorio type="date" label="Data" placeholder="" valor={data} aoAlterado={valor => setData(valor)} />
                 <ListaSuspensa obrigatorio label="Time" itens={times} valor={time} aoAlterado={valor => setTime(valor)} />
                 <Botao>Criar Card</Botao>
             </form>

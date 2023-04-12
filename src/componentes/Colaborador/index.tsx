@@ -8,12 +8,13 @@ interface ColaboradorProps{
     cargo: string;
     imagem: string;
     corDeFundo: string;
+    data: string;
     favorito: boolean;
     aoDeletar: (id: string) => void;
     aoFavoritar: (id: string) => void;
 }
 
-const Colaborador = ({id, nome, cargo, imagem, corDeFundo, favorito, aoDeletar, aoFavoritar}: ColaboradorProps) =>{
+const Colaborador = ({id, nome, cargo, imagem, corDeFundo, data, favorito, aoDeletar, aoFavoritar}: ColaboradorProps) =>{
 
     function favoritar(){
         aoFavoritar(id)
@@ -33,6 +34,7 @@ const Colaborador = ({id, nome, cargo, imagem, corDeFundo, favorito, aoDeletar, 
             <div className="rodape">
                 <h4>{nome}</h4>
                 <h5>{cargo}</h5>
+                <h6>{new Date(data).toLocaleDateString()}</h6>
                 <div className="favoritar">
                     {favorito ? <AiFillHeart {...propsFavorito} color="#E21818" /> : <AiOutlineHeart {...propsFavorito} />}
                 </div>

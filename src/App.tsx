@@ -27,6 +27,7 @@ function App() {
     cargo: "Desenvolvedor",
     imagem: "https://github.com/giudicellisilva.png",
     time: "Front-End",
+    data: "12/04/2023",
     favorito: false
   },
   {
@@ -35,6 +36,7 @@ function App() {
     cargo: "Desenvolvedor",
     imagem: "https://github.com/giudicellisilva.png",
     time: "Programação",
+    data: "12/04/2023",
     favorito: false
   },
   {
@@ -43,6 +45,7 @@ function App() {
     cargo: "Professora",
     imagem: "https://giudicellisilva.github.io/GiudicelliElias.Dev/imagens/user.png",
     time: "Inovação e Gestão",
+    data: "12/04/2023",
     favorito: false
   },
   {
@@ -51,6 +54,7 @@ function App() {
     cargo: "Desenvolvedor",
     imagem: "https://github.com/AdnRamos.png",
     time: "Front-End",
+    data: "12/04/2023",
     favorito: false
   },
   {
@@ -59,6 +63,7 @@ function App() {
     cargo: "Desenvolvedor",
     imagem: "https://media.licdn.com/dms/image/C5603AQGYmz6PMBSa0Q/profile-displayphoto-shrink_800_800/0/1635606364071?e=1685577600&v=beta&t=27MAQqqWtc2Uj-xkU1Z_9oj91iYJm_N2a5OpKWLm_7I",
     time: "Programação",
+    data: "12/04/2023",
     favorito: false
   }
   ]
