@@ -76,7 +76,7 @@ function App() {
   }
 
   function deletarColaborador(id: string){
-    setColaboradores(colaboradores.filter( (colaborador) => colaborador.id != id))
+    setColaboradores(colaboradores.filter( (colaborador) => colaborador.id !== id))
   }
 
   function mudarCorDoTime(cor: string, id: string){
